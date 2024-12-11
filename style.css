@@ -6,28 +6,28 @@ body, h1, h2, h3, ul, li, p {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    background-color: #f9f9f9;
     color: #333;
     margin: 20px;
 }
 
 #resume {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
-    color: #2c3e50;
-    margin-bottom: 10px;
+    color: #1a202c;
+    margin-bottom: 15px;
 }
 
 p {
@@ -36,7 +36,7 @@ p {
 }
 
 p a {
-    color: #2980b9;
+    color: #3182ce;
     text-decoration: none;
 }
 
@@ -47,23 +47,23 @@ p a:hover {
 hr {
     border: 0;
     height: 1px;
-    background: #ddd;
+    background: #e2e8f0;
     margin: 20px 0;
 }
 
 /* Sections */
 h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #34495e;
-    border-bottom: 2px solid #2980b9;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #2d3748;
+    border-bottom: 2px solid #3182ce;
     padding-bottom: 5px;
 }
 
 h3 {
-    font-size: 1.2em;
-    color: #2c3e50;
-    margin-top: 10px;
+    font-size: 1.4em;
+    color: #4a5568;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
@@ -76,28 +76,28 @@ ul {
 
 li {
     margin-bottom: 10px;
-    line-height: 1.5;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
 }
 
-/* Skills and Competences */
-ul li::before {
+li::before {
     content: "\2022";
-    color: #2980b9;
+    color: #3182ce;
+    font-size: 1.2em;
     font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+    margin-right: 10px;
 }
 
 /* Highlighted Elements */
 strong {
-    color: #34495e;
+    color: #2d3748;
     font-weight: bold;
 }
 
 /* Links */
 a {
-    color: #2980b9;
+    color: #3182ce;
     text-decoration: none;
 }
 
@@ -105,26 +105,36 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Languages and Competences */
-#languages ul, #other-competences ul {
-    margin-top: 10px;
+/* Buttons and Interactive Elements */
+button {
+    background-color: #3182ce;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #2b6cb0;
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #resume {
-        padding: 15px;
+        padding: 20px;
     }
 
     h1 {
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     h2 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     h3 {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 }
