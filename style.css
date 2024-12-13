@@ -3,31 +3,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 body {
-  background-color: #f4f4f9;
+  background-color: #fafafa;
   color: #333;
   line-height: 1.6;
   padding: 20px;
 }
 
 #resume {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 30px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* Header */
 h1 {
   font-size: 2.5em;
   color: #2c3e50;
-  margin-bottom: 10px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -44,8 +44,8 @@ p {
 }
 
 a {
+  color: #3498db;
   text-decoration: none;
-  color: #2980b9;
 }
 
 a:hover {
@@ -58,36 +58,80 @@ section {
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: #2c3e50;
   margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: #34495e;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 ul {
-  list-style: none;
-  padding-left: 20px;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 ul li {
   margin-bottom: 10px;
+  font-size: 1em;
+  color: #555;
 }
 
 ul li strong {
   color: #2c3e50;
+  font-weight: bold;
 }
 
-/* Separator */
 hr {
-  border: 0;
-  height: 1px;
-  background-color: #ecf0f1;
+  border: none;
+  border-top: 1px solid #ecf0f1;
   margin: 30px 0;
+}
+
+/* Skills Section */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#skills li {
+  background-color: #ecf0f1;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 1em;
+  color: #34495e;
+  text-align: center;
+}
+
+#skills li:hover {
+  background-color: #bdc3c7;
+}
+
+/* Professional Path Section */
+#professional-path ul {
+  padding-left: 20px;
+}
+
+#professional-path li {
+  padding: 12px 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+#professional-path li:last-child {
+  border-bottom: none;
+}
+
+#professional-path a {
+  color: #3498db;
+  font-weight: bold;
+}
+
+#professional-path a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive Design */
@@ -97,7 +141,7 @@ hr {
   }
 
   h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 
   h3 {
@@ -107,67 +151,21 @@ hr {
   section {
     margin-bottom: 20px;
   }
-}
 
-/* Skills Section */
-#skills ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
-}
+  #skills ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-#skills li {
-  background-color: #ecf0f1;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  font-weight: bold;
-}
-
-#skills li:hover {
-  background-color: #dfe6e9;
-}
-
-/* Experience Section */
-#professional-path ul {
-  padding-left: 30px;
-}
-
-#professional-path li {
-  padding: 10px 0;
-  border-bottom: 1px solid #ecf0f1;
-}
-
-#professional-path li:last-child {
-  border-bottom: none;
-}
-
-#professional-path a {
-  color: #2980b9;
-}
-
-#professional-path a:hover {
-  text-decoration: underline;
-}
-
-/* Languages & Competences */
-#languages ul, #other-competences ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
-}
-
-#languages li, #other-competences li {
-  background-color: #ecf0f1;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
+  #professional-path ul {
+    padding-left: 10px;
+  }
 }
 
 /* Footer (Optional) */
 footer {
   text-align: center;
-  margin-top: 30px;
   font-size: 0.9em;
   color: #7f8c8d;
+  margin-top: 40px;
 }
